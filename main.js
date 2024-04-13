@@ -2,8 +2,7 @@ import "./style.css";
 
 // read url params
 const urlParams = new URLSearchParams(window.location.search);
-const number = urlParams.get("nummer") | 1;
-
+const number = urlParams.get("nummer");
 // fetch data file
 fetch(`/data/${number}.json`)
   .then((response) => response.json())
